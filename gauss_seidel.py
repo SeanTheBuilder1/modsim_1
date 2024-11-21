@@ -1,4 +1,3 @@
-%matplotlib inline
 import matplotlib.pyplot as plt 
 
 def main():
@@ -24,14 +23,14 @@ def main():
         z_old = z_new
         i = i + 1
         print(
-            "Iteration %d\nNew x value: %lf\nNew y value: %lf\nNew z value: %lf\nX Error: %lf\nY Error: %lf\nZ Error: %lf\nAverage Error:%lf\n\n"
+            "Iteration %d\nNew x value: %0.16f\nNew y value: %0.16f\nNew z value: %0.16f\nX Error: %0.16f\nY Error: %0.16f\nZ Error: %0.16f\nAverage Error:%0.16f\n\n"
             % (i, x_new, y_new, z_new, x_error, y_error, z_error, ave_error)
         )
         graph_arr_x.append(i)
         graph_arr_y.append(ave_error)
         if (ave_error < acceptable_error):
             print(
-                "Acceptable Error Reached!\nResults\nX=%lf, Y=%lf, Z=%lf Error=%lf" %  
+                "Acceptable Error Reached!\nResults\nX=%0.16f, Y=%0.16f, Z=%0.16f Error=%0.16f" %  
                 (x_new, y_new, z_new, ave_error)
             )
             break
