@@ -13,8 +13,8 @@ def main():
 
     while True:
         x_new = (7.0 - y_old + z_old) / 3.0
-        y_new = (4.0 - (2 * x_new)-z_old) / 4.0;
-        z_new = (3.0 - x_new + y_new) / 3.0;
+        y_new = (4.0 - (2 * x_old)-z_old) / 4.0;
+        z_new = (3.0 - x_old + y_old) / 3.0;
         x_error = abs((x_new - x_old) / x_new)
         y_error = abs((y_new - y_old) / y_new)
         z_error = abs((z_new - z_old) / z_new)
