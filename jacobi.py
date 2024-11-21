@@ -1,4 +1,4 @@
-#%matplotlib inline
+%matplotlib inline
 import matplotlib.pyplot as plt 
 
 def main():
@@ -35,7 +35,12 @@ def main():
                 (x_new, y_new, z_new, ave_error)
             )
             break
+    
     plt.plot(graph_arr_x, graph_arr_y)
+    plt.xlabel('Iteration')
+    plt.ylabel('Error')
+    plt.title('Jacobi Method')
     plt.show()
 
 main()
+

@@ -1,4 +1,4 @@
-#%matplotlib inline
+%matplotlib inline
 import matplotlib.pyplot as plt 
 
 def main():
@@ -36,6 +36,10 @@ def main():
             )
             break
     plt.plot(graph_arr_x, graph_arr_y)
+    plt.xlabel('Iteration')
+    plt.ylabel('Error')
+    plt.title('Gauss-Seidel Method')
     plt.show()
 
 main()
+
